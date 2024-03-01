@@ -1,0 +1,39 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite of 5,Firefox 123.0,,,22-02-2024 00:49:36,22-02-2024 00:50:55,1m - 19.019s,PASSED
+,,,,,,,
+Test Cases/TC - Login Success,Firefox 123.0,,,22-02-2024 00:49:37,22-02-2024 00:49:50,13.598s,PASSED
+"openBrowser("""")",Firefox 123.0,,,22-02-2024 00:49:37,22-02-2024 00:49:44,6.687s,PASSED
+"navigateToUrl(""https://www.saucedemo.com/"")",Firefox 123.0,,,22-02-2024 00:49:44,22-02-2024 00:49:45,1.440s,PASSED
+"verifyElementClickable(findTestObject(""Object Repository/Page_Swag Labs/input_Swag Labs_login-button""))",Firefox 123.0,,,22-02-2024 00:49:45,22-02-2024 00:49:48,2.206s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/input_Swag Labs_user-name""), 1)",Firefox 123.0,,,22-02-2024 00:49:48,22-02-2024 00:49:48,0.321s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/input_Swag Labs_password""), 1)",Firefox 123.0,,,22-02-2024 00:49:48,22-02-2024 00:49:48,0.303s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/input_Swag Labs_user-name""), ""standard_user"")",Firefox 123.0,,,22-02-2024 00:49:48,22-02-2024 00:49:49,0.651s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/input_Swag Labs_password""), ""secret_sauce"")",Firefox 123.0,,,22-02-2024 00:49:49,22-02-2024 00:49:50,0.740s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/input_Swag Labs_login-button""))",Firefox 123.0,,,22-02-2024 00:49:50,22-02-2024 00:49:50,0.765s,PASSED
+,,,,,,,
+Test Cases/TC - Add to Cart,Firefox 123.0,,,22-02-2024 00:49:50,22-02-2024 00:50:04,13.596s,PASSED
+"callTestCase(findTestCase(""TC - Login Success""), null)",Firefox 123.0,,,22-02-2024 00:49:51,22-02-2024 00:50:02,10.902s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/div_Swag Labs""), 0)",Firefox 123.0,,,22-02-2024 00:50:02,22-02-2024 00:50:02,0.692s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/div_Sauce Labs Backpack""), 0)",Firefox 123.0,,,22-02-2024 00:50:02,22-02-2024 00:50:03,0.291s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/div_Sauce Labs Backpack""))",Firefox 123.0,,,22-02-2024 00:50:03,22-02-2024 00:50:03,0.633s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/button_Add to cart""), 1)",Firefox 123.0,,,22-02-2024 00:50:03,22-02-2024 00:50:04,0.325s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/button_Add to cart""))",Firefox 123.0,,,22-02-2024 00:50:04,22-02-2024 00:50:04,0.524s,PASSED
+,,,,,,,
+Test Cases/TC - Open Cart,Firefox 123.0,,,22-02-2024 00:50:04,22-02-2024 00:50:19,15.030s,PASSED
+"callTestCase(findTestCase(""TC - Add to Cart""), null)",Firefox 123.0,,,22-02-2024 00:50:04,22-02-2024 00:50:18,14.135s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/a_Swag Labs_shopping_cart_link""), 1)",Firefox 123.0,,,22-02-2024 00:50:18,22-02-2024 00:50:19,0.294s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/a_Swag Labs_shopping_cart_link""))",Firefox 123.0,,,22-02-2024 00:50:19,22-02-2024 00:50:19,0.512s,PASSED
+,,,,,,,
+Test Cases/TC - Checkout,Firefox 123.0,,,22-02-2024 00:50:19,22-02-2024 00:50:37,17.713s,PASSED
+"callTestCase(findTestCase(""TC - Open Cart""), null)",Firefox 123.0,,,22-02-2024 00:50:19,22-02-2024 00:50:36,16.850s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/button_Checkout""), 1)",Firefox 123.0,,,22-02-2024 00:50:36,22-02-2024 00:50:36,0.268s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/button_Checkout""))",Firefox 123.0,,,22-02-2024 00:50:36,22-02-2024 00:50:37,0.494s,PASSED
+,,,,,,,
+Test Cases/TC - Filling Detail for Order,Firefox 123.0,,,22-02-2024 00:50:37,22-02-2024 00:50:55,18.661s,PASSED
+"callTestCase(findTestCase(""TC - Checkout""), null)",Firefox 123.0,,,22-02-2024 00:50:37,22-02-2024 00:50:53,15.714s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/input_Checkout Your Information_firstName""), 0)",Firefox 123.0,,,22-02-2024 00:50:53,22-02-2024 00:50:53,0.275s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/input_Checkout Your Information_lastName""), 0)",Firefox 123.0,,,22-02-2024 00:50:53,22-02-2024 00:50:53,0.269s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Swag Labs/input_Checkout Your Information_postalCode""), 0)",Firefox 123.0,,,22-02-2024 00:50:53,22-02-2024 00:50:54,0.302s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/input_Checkout Your Information_firstName""), ""John"")",Firefox 123.0,,,22-02-2024 00:50:54,22-02-2024 00:50:54,0.528s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/input_Checkout Your Information_lastName""), ""Doe"")",Firefox 123.0,,,22-02-2024 00:50:54,22-02-2024 00:50:55,0.721s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/input_Checkout Your Information_postalCode""), ""12345"")",Firefox 123.0,,,22-02-2024 00:50:55,22-02-2024 00:50:55,0.727s,PASSED
